@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ 
+</head>
+<body>
+	
+	<div class="wrapper">
+    <div class="title">Membuat Show More Menggunakan HTML CSS dan jQuery</div>
+    <h4>Contoh Tools Generate Dummy Text</h4>
+    <ul>
+        <li>Lorem ipsum</li>
+        <li>Blind Text Generator</li>
+        <li>Random Text Generator</li>
+        <li>Cameron Creative Filler Text</li>
+        <li>Twipsum</li>  
+        <li>HTML Ipsum</li>
+        <li>Adhesion Text</li>
+        <li>Blokk</li>
+        <li>Loripsum</li>
+        <li>Malevole text generator</li>
+        <li>Bacon Ipsum</li>
+    </ul>
+    <div class="sholes_btn">
+        <span class="sholes_text">Show More</span> <span class="arrow">
+      <i class="fas fa-angle-down"></i>
+      </span>   
+    </div>    
+</div>
+</body>
+<script>
+    	$(".sholes_btn").click(function(){
+		$(this).toggleClass("active");
+		$(".wrapper ul").toggleClass("active");
+		  
+		if($(".sholes_btn").hasClass("active")){
+		   $(".sholes_text").text("Show Less");
+		}else{
+		   $(".sholes_text").text("Show More");
+		  }
+		});
+    </script>
